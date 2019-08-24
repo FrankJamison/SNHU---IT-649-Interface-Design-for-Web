@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Riverside Massage &amp; Spa Schedule an Appointment</title>
+		
+		<link href="css/myStyles.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header>
+			<img src="images/riverside-massage-and-spa-masthead.jpg" alt="Riverside Massage & Spa" id="masthead">
+		</header>
+		<nav>
+			<div class="navButton"><a href="index.html">Home</a></div>
+			<div class="navButton"><a href="services.html">Services</a></div>
+			<div class="navButton"><a href="staff.html">Staff</a></div>
+			<div class="navButton active"><a href="scheduling.html">Scheduling</a></div>
+			<div class="navButton"><a href="contact.html">Contact</a></div>
+			<div class="navPhone">Phone: (951) 867-5309</div>
+		</nav>
+		<main class="clearfix schedule">
+			<div class="formScheduling">
+				<h1>Schedule an Appointment</h1>
+				<form action="index.html" method="post"> 
+					<fieldset>
+						<legend>Appointment Information</legend>
+					
+						<label for="service">Please select a service:</label>
+						<select id="service" name="service">
+							<option value="massage">Swedish Massage</option>
+							<option value="facial">European Facial</option>
+							<option value="both">Massage and Facial</option>
+						</select>
+						
+						<label for="staff">Please select your preferred service provider:</label>
+						<select id="staff" name="staff">
+							<option value="massage">Brenda</option>
+							<option value="facial">Rolita</option>
+							<option value="both">No Prefference</option>
+						</select>
+						
+						<label for="apptDate">Please enter the appointment date:</label>
+						<input type="date" id="apptDate" name="apptDate" required>
+						
+						<label for="apptTime">Please enter the appointment time:</label>
+						<input type="time" id="apptTime" name="apptTime" required>
+						
+						<label for="length">Please select the appointment duration:</label>
+						<select id="length" name="length">
+							<option value="hours1">1 hour</option>
+							<option value="hours2">2 hours</option>
+						</select>
+					</fieldset>
+					
+					<p>&nbsp;</p>
+					
+					<fieldset>
+						<legend>Personal Information</legend>
+					
+						<label for="firstName">Please enter your first name:</label>
+						<input type="text" id="firstName" name="firstName" required>
+						
+						<label for="lastName">Please enter your last name:</label>
+						<input type="text" id="lastName" name="lastName" required>
+						
+						<label for="phone">Please enter your phone number:</label>
+						<input type="tel" id="phone" name="phone" required>
+						
+						<label for="email">Please enter your email address:</label>
+						<input type="email" id="email" name="email" required>
+					</fieldset>
+					
+					<input type="submit" value="Submit">
+					
+				</form>
+			</div>
+		</main>
+		<footer class="clearfix">
+			<p>&copy; 2017 Riverside Massage &amp; Spa. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,243 @@
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	margin: inherit;
+	padding: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header img {
+	width: 100%;
+	float: left;
+}
+
+nav {
+	background-color: black;
+	color: white;
+	width: 100%;
+	border: 1px solid white;
+	font-size: 20px;
+	line-height: 2;
+	display: flex;
+}
+
+.navButton {
+	text-align: center;
+	float: left;
+	border-right: 1px solid white;
+	width: 12.5%;
+}
+
+.navButton a,
+.navButton a:active,
+.navButton a:hover,
+.navButton a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.navPhone {
+	width: 37.5%;
+	text-align: right;
+	padding-right: 25px;
+}
+
+.active, .navButton:hover {
+	background-color: #444444;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#colLeft {
+	flex: 1;
+	padding: 20px;
+	float: left;
+}
+
+#colRight {
+	flex: 1;
+	padding: 20px;
+	float: left;
+}
+
+#colLeft h1, #colRight h1 {
+	padding-bottom: 10px;
+	text-shadow: 2px 2px 4px #999999;
+}
+
+#colLeft h2, #colRight h2 {
+	padding-bottom: 10px;
+	text-shadow: 2px 2px 4px #999999;
+}
+
+#colLeft p, #colRight p {
+	line-height: 2;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 18px;
+}
+
+#colLeft img, .services img {
+	width: 90%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.learnMore, .readBio {
+	font-weight: bold;
+}
+
+#colLeft img#Brenda, #colRight img#Rolita {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+#colLeft.staff, #colRight.staff {
+	text-align: center;
+}
+
+.bio {
+	display: block;
+	padding: 20px;
+}
+
+.bio h1, .bio h2, .bio h3,
+.schedule h1 {
+	padding: 0;
+	margin: 0;
+	text-shadow: 2px 2px 4px #999999;
+	line-height: 1;
+}
+
+.bio h1{
+	padding-top: 20px;
+}
+
+.bio img {
+	float: left;
+}
+
+#bioSections {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#bioSections .section {
+	flex: 1;
+	float: left;
+}
+
+.section a {
+	margin: 0;
+	padding: 0;
+}
+
+main.schedule,
+main.contact {
+	display: block;
+}
+
+.schedule h1,
+.contact h1 {
+	padding: 20px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #999999;
+}
+
+.formScheduling,
+.formContact {
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+}
+
+form {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+fieldset {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+
+legend {
+	text-align: left;
+	margin: 0 0 0 10px;
+	font-variant: small-caps;
+	font-size: 18px;
+	text-shadow: 2px 2px 4px #999999;
+}
+
+label {
+	display: block;
+	margin: 0;
+}
+
+input[type=text], 
+input[type=tel], 
+input[type=email],
+input[type=date],
+input[type=time],
+select {
+    width: 100%;
+    margin: 0 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+footer {
+	clear:both;
+	line-height: 3;
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 10px;
+}
